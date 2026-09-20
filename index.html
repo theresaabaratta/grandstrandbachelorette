@@ -348,6 +348,27 @@
         margin-bottom: .5rem
       }
 
+      .gs-price {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: .15rem .6rem;
+        margin: 0 0 .6rem
+      }
+
+      .gs-price-tier {
+        font-family: 'Bricolage Grotesque', 'Figtree', sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: var(--rose-dark);
+        white-space: nowrap
+      }
+
+      .gs-price-note {
+        color: var(--ink);
+        font-size: .9rem
+      }
+
       .gs-where {
         background: var(--tide);
         color: #fff;
@@ -659,6 +680,12 @@
           <h2 id="activities-h">Bachelorette activities, nightlife, and boat charters</h2>
           <p class="gs-intro">Everything in one place, ordered from the quiet south end toward the lights.
             Each card is labeled with its town, or Whole Grand Strand if it covers all of them.</p>
+          <div class="gs-note mb-4">
+            <h3 class="h6">Price ranges</h3>
+            <p class="mb-0">Each card shows a typical price per person: Free, $ (under $25), $$ ($25 to $60),
+              $$$ ($60 to $120), and $$$$ (over $120). These are estimates that change with the season, so
+              confirm current prices with each business.</p>
+          </div>
           <div class="row g-4">
             <div class="col-md-6 col-lg-4">
               <article class="gs-card gs-actcard h-100">
@@ -673,6 +700,12 @@
                     <span class="badge gs-where gs-where-wide">Whole Grand Strand</span>
                     <span class="badge gs-tag">Watersports and charters</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$$$</span>
+                    <span class="gs-price-note">About $20 to $150 per person, depending on the activity.
+                      Pontoon rentals are priced per boat.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Parasailing, jet skis, dolphin cruises, sunset cruises, banana boat
                     rides, catamaran cruises, and kayak, paddleboard, and pontoon rentals. Family-owned since
                     1997 with USCG-certified captains, based on the MarshWalk in Murrells Inlet, and runs
@@ -693,6 +726,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Shopping</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to browse. Shopping and food cost extra.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Boutiques, galleries, and cafes tucked under live oaks. A relaxed
                     first afternoon before the weekend gets loud.</p>
                 </div>
@@ -711,6 +749,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Beach day</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to visit.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">One of the oldest seaside resorts in America, and locals call the
                     island&#x27;s style arrogantly shabby. Quiet sand, marsh views, and room to lay out for a
                     slow beach morning.</p>
@@ -730,6 +773,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Gardens</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">About $25 per adult, good for 7 consecutive days.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Sculpture gardens and live oak paths just north of the island. A
                     photo-heavy morning and the calmest hour of the trip.</p>
                 </div>
@@ -748,6 +796,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Gardens</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">About $25 per adult, good for 7 consecutive days.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Sculpture gardens and live oak paths just north of the island. A
                     photo-heavy morning and the calmest hour of the trip.</p>
                 </div>
@@ -766,6 +819,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Day trip</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to walk. Shops and meals cost extra.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Historic waterfront boardwalk with shops, galleries, and
                     restaurants, a short drive south for a slow afternoon.</p>
                 </div>
@@ -784,6 +842,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Coffee and gifts</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically under $15 for coffee and a pastry.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Coffee, baked goods, and a retail corner of local gifts and decor
                     for the maid of honor&#x27;s last-minute shopping.</p>
                 </div>
@@ -802,6 +865,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Sweet stop</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically under $25 for a box for the group.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Creative, indulgent doughnuts. Order a box for the morning after.
                   </p>
                 </div>
@@ -820,6 +888,12 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Kayak tour</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Typically about $40 to $75 per person for a guided
+                      paddle.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Guided paddles on the calm Waccamaw River, a quiet, wildlife-heavy
                     morning for the group.</p>
                 </div>
@@ -838,6 +912,11 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Fishing</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically under $25 for basic gear and bait.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Pawleys locals fish and crab in the surrounding creeks, a laid-back
                     activity for a small group.</p>
                 </div>
@@ -856,6 +935,12 @@
                     <span class="badge gs-where">Pawleys Island</span>
                     <span class="badge gs-tag">Nightlife, dinner and drinks</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Typically about $25 to $50 per person for dinner and
+                      drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A casual seafood spot that works for a toast before an early night.
                     Pawleys keeps evenings low-key.</p>
                 </div>
@@ -874,6 +959,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Boardwalk</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to walk, and live music on the MarshWalk is free. Food
+                      and drinks cost extra.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A half-mile creekside boardwalk lined with seafood restaurants and
                     live music most nights. Sunset here is the main event of the weekend.</p>
                 </div>
@@ -892,6 +983,11 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Boat charter</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">From about $37 per person. Bring your own drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Group sunset cruises out of the inlet. Bring your own drinks and
                     food, ice is onboard, and guests 21 and up need a photo ID. Boats hold groups of up to
                     about 20.</p>
@@ -911,6 +1007,11 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Outdoors</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Typically about $40 to $75 per person.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Beginner-friendly paddles through the salt marsh with a good chance
                     of spotting birds and dolphins.</p>
                 </div>
@@ -929,6 +1030,11 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Beach and photos</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">$8 per adult for park entry, plus $2 for Atalaya.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A wilder stretch of beach, marsh views, and Atalaya, a 1930s
                     coastal mansion that makes a strong group photo backdrop.</p>
                 </div>
@@ -947,6 +1053,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Boat charter</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$–$$$</span>
+                    <span class="gs-price-note">Private charter priced per boat, so ask for a quote. Split
+                      among a group, it typically works out to about $40 to $75 each.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Private two-to-three-hour inlet and waterway cruises, with the
                     route tailored to your group.</p>
                 </div>
@@ -965,6 +1077,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, live music</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Live music is free. Typically about $20 to $45 per person for
+                      food and drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">The live music anchor of the MarshWalk, with frozen cocktails and a
                     patio over the water.</p>
                 </div>
@@ -983,6 +1101,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, lounge</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Typically about $25 to $60 per person for dinner and
+                      drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Pirate-themed, with a downstairs lounge and live music on select
                     nights.</p>
                 </div>
@@ -1001,6 +1125,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, live music</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$</span>
+                    <span class="gs-price-note">Typically about $20 to $45 per person for food and
+                      drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A spacious deck over the inlet with live bands and fish tacos.</p>
                 </div>
               </article>
@@ -1018,6 +1148,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, dancing</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Typically about $15 to $35 per person for food and
+                      drinks.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Indoor and outdoor bars with live music on select nights.</p>
                 </div>
               </article>
@@ -1035,6 +1171,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, dockside bar</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$–$$$</span>
+                    <span class="gs-price-note">Typically about $25 to $70 per person. The Tuna Shak bar is
+                      the cheaper option.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Walk out back to the Tuna Shak for a casual bar with live music on
                     the marina.</p>
                 </div>
@@ -1053,6 +1195,12 @@
                     <span class="badge gs-where">Murrells Inlet</span>
                     <span class="badge gs-tag">Nightlife, craft beer</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Drafts typically run about $6 to $10 each. Crab legs and the
+                      raw bar cost more.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Around 90 drafts for the friend who wants a flight instead of a
                     cocktail.</p>
                 </div>
@@ -1071,6 +1219,12 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Pier</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Walking the pier has been free. Fishing, ice cream, and meals
+                      cost extra.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">The rebuilt pier anchors the town. Walk it at sunrise, then hit
                     Drippy&#x27;s Ice Cream for the ice cream nachos.</p>
                 </div>
@@ -1089,6 +1243,12 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Watersports</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$–$$$</span>
+                    <span class="gs-price-note">Typically about $30 to $100 per person, depending on the
+                      activity.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Banana boat rides and parasailing right off Surfside Beach.</p>
                 </div>
               </article>
@@ -1106,6 +1266,11 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Games</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically about $10 to $25 per person.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Executive and par-3 courses plus soccer golf and disc golf for a
                     team-versus-team afternoon.</p>
                 </div>
@@ -1124,6 +1289,11 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Shopping</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to browse. Bring cash for shopping.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A covered flea market that has operated since 1975. A dependable
                     rainy-day plan.</p>
                 </div>
@@ -1142,6 +1312,12 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Indoor fun</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Priced by activity. Typically about $20 to $45 per person for
+                      a mix of games and rides.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Skating rink, go-karts, arcade, and laser tag for a rain plan or a
                     competitive group activity.</p>
                 </div>
@@ -1160,6 +1336,11 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Indoor fun</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Typically about $20 to $40 per person for a session.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Virtual racing simulators for the friend who wants a trophy.</p>
                 </div>
               </article>
@@ -1177,6 +1358,11 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Pier fishing</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically under $25 for bait and tackle.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Bait and tackle on the Surfside pier for a casual fishing hour.</p>
                 </div>
               </article>
@@ -1194,6 +1380,12 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Nightlife, karaoke</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Typically about $15 to $40 per person for drinks and
+                      food.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A local institution for over 40 years, known for live music,
                     karaoke, and an easy party vibe.</p>
                 </div>
@@ -1212,6 +1404,11 @@
                     <span class="badge gs-where">Surfside Beach</span>
                     <span class="badge gs-tag">Nightlife, oceanfront bar</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Cocktails typically run about $10 to $16 each.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A relaxed oceanfront bar for sunset drinks with a sea breeze.</p>
                 </div>
               </article>
@@ -1229,6 +1426,11 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Boardwalk</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free</span>
+                    <span class="gs-price-note">Free to walk. Rides, games, and food cost extra.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A 1.2-mile oceanfront boardwalk from Pier 14 to the Second Avenue
                     Pier with shops, attractions, and street performers, and it stays lively after dark.</p>
                 </div>
@@ -1247,6 +1449,11 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Photo op</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Adult tickets are about $18 to $20.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A 187-foot observation wheel with climate-controlled gondolas that
                     seat up to six, lit up at night.</p>
                 </div>
@@ -1265,6 +1472,12 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Entertainment complex</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free–$$</span>
+                    <span class="gs-price-note">Free to walk in. Attractions such as Topgolf, WonderWorks, and
+                      Ripley&#x27;s Aquarium are priced separately.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Shopping, dining, dance venues, and attractions in one place,
                     including Topgolf, WonderWorks, and Ripley&#x27;s Aquarium.</p>
                 </div>
@@ -1283,6 +1496,12 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Dinner show</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$$</span>
+                    <span class="gs-price-note">From about $70 per adult, including a four-course
+                      dinner.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">A stunt-filled pirate show served with a four-course dinner.</p>
                 </div>
               </article>
@@ -1300,6 +1519,12 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Rides</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">Free–$$</span>
+                    <span class="gs-price-note">Free entry. All-day ride wristbands typically run about $30 to
+                      $45.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Seaside amusement park on Ocean Boulevard with dozens of rides for
                     a nostalgic group afternoon.</p>
                 </div>
@@ -1318,6 +1543,11 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Fishing pier</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$</span>
+                    <span class="gs-price-note">Typically under $25 for pier access and fishing.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Oceanfront pier at the north end of the boardwalk for fishing and
                     sunset views.</p>
                 </div>
@@ -1336,6 +1566,12 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Nightlife, live music</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$–$$</span>
+                    <span class="gs-price-note">Typically about $20 to $45 per person for drinks and
+                      food.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">Live music venue on Ocean Boulevard.</p>
                 </div>
               </article>
@@ -1353,6 +1589,12 @@
                     <span class="badge gs-where">Myrtle Beach</span>
                     <span class="badge gs-tag">Nightlife, concerts</span>
                   </div>
+                  <p class="gs-price">
+                    <span class="visually-hidden">Price range: </span>
+                    <span class="gs-price-tier">$$–$$$</span>
+                    <span class="gs-price-note">Ticket prices vary by show. Many concerts typically run about
+                      $25 to $75.</span>
+                  </p>
                   <p class="mb-0 gs-blurb">One of the area&#x27;s larger concert venues, in North Myrtle
                     Beach.</p>
                 </div>
